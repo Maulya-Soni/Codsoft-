@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Advanced Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="light">
+
+  <div class="theme-toggle">
+    <button id="themeBtn">🌙 Dark Mode</button>
+  </div>
+
+  <div class="calculator" id="calculator">
+
+    <input type="text" class="display" readonly />
+
+    <div class="advanced-section" id="advancedSection">
+      <button data-func="sin">sin</button>
+      <button data-func="cos">cos</button>
+      <button data-func="tan">tan</button>
+      <button data-func="sqrt">√</button>
+      <button data-func="log">log</button>
+      <button data-func="ln">ln</button>
+      <button data-func="exp">exp</button>
+      <button data-func="x2">x²</button>
+      <button data-func="n!">n!</button>
+      <button data-func="π">π</button>
+      <button data-func="e">e</button>
+      <button data-func="rand">rand</button>
+      <button data-func="abs">abs</button>
+      <button data-func="1/x">1/x</button>
+    </div>
+
+    <div class="buttons">
+      <button class="btn" data-value="AC" id="clear">AC</button>
+      <button class="btn" id="toggleAdvanced">+/-</button>
+      <button class="btn operator" data-value="%">%</button>
+      <button class="btn operator" data-value="÷">÷</button>
+
+      <button class="btn" data-value="7">7</button>
+      <button class="btn" data-value="8">8</button>
+      <button class="btn" data-value="9">9</button>
+      <button class="btn operator" data-value="×">×</button>
+
+      <button class="btn" data-value="4">4</button>
+      <button class="btn" data-value="5">5</button>
+      <button class="btn" data-value="6">6</button>
+      <button class="btn operator" data-value="-">-</button>
+
+      <button class="btn" data-value="1">1</button>
+      <button class="btn" data-value="2">2</button>
+      <button class="btn" data-value="3">3</button>
+      <button class="btn operator" data-value="+">+</button>
+
+      <button class="btn zero" data-value="0">0</button>
+      <button class="btn" data-value=".">.</button>
+      <button class="btn equal" data-value="=">=</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
