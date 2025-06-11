@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CODSOFT Landing Page</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+</head>
+<body>
+
+  <div id="preloader" class="preloader">Loading...</div>
+
+  <main id="content" style="display:none;">
+    <header class="nav-bar">
+      <div class="container flex-space">
+        <h1 class="brand">CSLP</h1>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero-section" data-aos="zoom-in">
+      <div class="container centered-text">
+        <h2 class="main-title">We Craft Digital Experiences</h2>
+        <p class="subtitle">Empowering brands through design, code, and strategy.</p>
+        <div class="button-group">
+          <a href="#contact" class="btn primary">Let's Collaborate</a>
+          <a href="#about" class="btn ghost">Know More</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature-section" data-aos="fade-up">
+      <div class="container grid-3">
+        <div class="feature-card">
+          <h3>🚀 Start Strong</h3>
+          <p>Launch your online brand with scalable, future-ready solutions.</p>
+        </div>
+        <div class="feature-card">
+          <h3>🛠️ Full Support</h3>
+          <p>We're with you 24/7—from strategy to execution and beyond.</p>
+        </div>
+        <div class="feature-card">
+          <h3>📊 Transparent Progress</h3>
+          <p>We deliver results with clear metrics, fast timelines, and full clarity.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about-section" data-aos="fade-up">
+      <div class="container grid-2">
+        <div class="about-info">
+          <h2>About CSLP</h2>
+          <p>We’ve spent <strong>15+ years</strong> helping brands elevate their digital identity. Our team blends creativity, coding, and analytics to deliver results that speak.</p>
+          <p>Whether it's a website, campaign, or product launch—we make it impactful.</p><br>
+          <a href="#services" class="btn primary">Explore Services</a>
+        </div>
+        <div class="about-img">
+          <img src="/OIP.webp" alt="Digital agency team">
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="services-section" data-aos="fade-up">
+      <div class="container">
+        <h2 class="section-heading">Our Services</h2>
+        <div class="service-grid">
+          <div class="service-box">
+            <img src="/OIP1.jpeg" alt="Web Development">
+            <h3>Web Development</h3>
+            <p>Responsive, modern sites built for scalability.</p>
+            <a href="web-development.html" class="btn-link">Learn More →</a>
+          </div>
+          <div class="service-box">
+            <img src="/OIP 2.webp"alt="SEO Optimization">
+            <h3>SEO Optimization</h3>
+            <p>Strategic ranking solutions with real impact.</p>
+            <a href="seo-optimization.html" class="btn-link">Learn More →</a>
+          </div>
+          <div class="service-box">
+            <img src="/OIP 3.webp" alt="Content Creation">
+            <h3>Content Creation</h3>
+            <p>Content that connects, converts, and captivates.</p>
+            <a href="content-creation.html" class="btn-link">Learn More →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section" data-aos="fade-up">
+      <div class="container">
+        <h2 class="section-heading">Contact Us</h2>
+        <form class="form" onsubmit="return validateForm()">
+          <input type="text" id="name" placeholder="Your Full Name" required>
+          <input type="email" id="email" placeholder="Your Email Address" required>
+          <textarea id="message" placeholder="Your Message Here..." required></textarea>
+          <button type="submit" class="btn primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 CSLP. All rights reserved.</p>
+      </div>
+    </footer>
+  </main>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
